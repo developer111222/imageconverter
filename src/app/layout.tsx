@@ -1,4 +1,9 @@
-import { ThemeProvider } from "./ThemeProvider"
+import { ReactNode } from 'react';
+import { ThemeProvider } from "./ThemeProvider";
+
+interface RootLayoutProps {
+  children: ReactNode;
+}
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
@@ -17,5 +22,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </body>
       </html>
     </>
-  )
+  );
 }
