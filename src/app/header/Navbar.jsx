@@ -36,9 +36,7 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          <li>
-            <Dark/>
-          </li>
+         
         </ul>
       </nav>
     </header>

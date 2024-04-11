@@ -109,8 +109,8 @@ p{
 
 .file-input-container {
   position: relative;
-  width: 550px;
-  height: 350px;
+  width: 200px;
+  height: 120px;
   overflow: hidden;
   border: 2px solid #3498db; /* Blue border */
   border-radius: 12px;
@@ -230,14 +230,20 @@ font-size: 20px;
 
 
 /* -----------footer----------- */
+footer{
+  background: black;
+}
 
 footer [type="email"] {
   padding: 8px;
   width: 250px;
 }
+footer a{
+  color: #ffffff;
+}
 footer button{
-  background: black;
-  color: white;
+  color: black;
+  background: white;
   padding: 0 20px;
 }
 input:focus {
