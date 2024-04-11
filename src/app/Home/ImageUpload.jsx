@@ -23,8 +23,8 @@ const ImageUpload = () => {
 <div className="row">
 
       <form onSubmit={handleConvert} >
-    <div class="file-converter-container">
-    <div class="file-input-container">
+    <div className="file-converter-container">
+    <div className="file-input-container">
       <input 
         type="file" 
         multiple 
@@ -32,8 +32,8 @@ const ImageUpload = () => {
         id="fileInput"
         onChange={handleChange}
       />
-      <label for="fileInput" class="file-input-label">
-      <p className='center' style={{fontSize:"22px"}}>upload a file</p>
+      <label htmlFor="fileInput" className="file-input-label">
+      
         <img src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-22685.jpg?w=740&t=st=1712726758~exp=1712727358~hmac=4e0b7d4d7399ca4717fc38f2a350bf0e3f0f219ec8bfb1a594fa2eb4ddc698f5" /> 
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M0 0h24v24H0z" fill="none"/>
@@ -41,16 +41,19 @@ const ImageUpload = () => {
         </svg>
       </label>
     </div>
-  {files.length > 0 ?  <div>   <div class="select-container">
-      <label for="conversionType">Select Conversion Type:</label>
+    
+  {files.length > 0 ?  <div>   <div className="select-container">
+      <label htmlFor="conversionType">Select Conversion Type:</label>
       <select id="conversionType">
         <option value="jpeg">JPEG</option>
         <option value="png">PNG</option>
         <option value="webp">WEBP</option>
       </select>
+    <button className="convert-button">Convert Now</button>
     </div>
+     </div>
+    :<p className='center' style={{fontSize:"22px"}}>upload a file</p>   }
   
-    <button class="convert-button">Convert Now</button> </div> :"please upload file"}
 
   </div>
     </form>
