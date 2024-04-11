@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Footer() {
   return (
   <footer>
-<div className='flex container align-center ' style={{padding:"20px 0"}}>
+<div className='flex container align-center' >
     <div >
     <ul className='flex gap' >
           <li>

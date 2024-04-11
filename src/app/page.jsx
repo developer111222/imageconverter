@@ -10,10 +10,10 @@ const Home = () => {
   return (
 <>
 <Navbar/>
-<div className='container'>
+
 <ImageUpload/>
 <Steps />
-</div>
+
 <Footer/>
 </>
   )

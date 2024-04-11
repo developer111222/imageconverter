@@ -21,8 +21,14 @@ const ImageUpload = () => {
   };
 
   return (
-    <div className="row">
-      <form onSubmit={handleConvert}>
+    <div className="row m-20">
+      <div className='flex align-center p-20'>
+        <div className='col-50'>
+          <h1>Convert your images on the fly.</h1>
+          <p className='h3' style={{padding:"10px 0"}} >Convert images to different file formats, resize, and comh2ress with ease using our image converter.</p>
+          <p style={{lineHeight:"30px"}}>The Image Converter is a powerful tool designed to help you effortlessly convert your photos and images from one format to another. Whether you need to resize, rotate, or change the file type, our converter has got you covered. With its user-friendly interface and advanced features, you can achieve professional-quality results in no time</p>
+        </div>
+      <form onSubmit={handleConvert} className='col-50'>
         <div className="file-converter-container">
           <div className="file-input-container">
             <input 
@@ -65,6 +71,7 @@ const ImageUpload = () => {
           )}
         </div>
       </form>
+      </div>
     </div>
   );
 };
